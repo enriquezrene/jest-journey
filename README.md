@@ -1,3 +1,3 @@
 # jest-journey
 
-WIP https://jestjs.io/docs/expect#tothrowerror
+https://jestjs.io/docs/mock-function-api   
