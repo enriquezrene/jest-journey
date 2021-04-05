@@ -45,14 +45,14 @@
       [
         "@semantic-release/changelog",
         {
-          "changelogFile": "docs/CHANGELOG.md"
+          "changelogFile": "CHANGELOG.md"
         }
       ],
       [
         "@semantic-release/git",
         {
           "assets": [
-            "docs/CHANGELOG.md"
+            "CHANGELOG.md"
           ]
         }
       ],
@@ -76,9 +76,6 @@
         "message": "chore(release): ${nextRelease.version}"
       }
     ],
-    "parserOpts": {
-      "mergePattern": "Merged PR .*:"
-    },
     "repositoryUrl": "https://github.com/enriquezrene/jest-journey"
   }
 }
