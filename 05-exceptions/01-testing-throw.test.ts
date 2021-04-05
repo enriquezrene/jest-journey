@@ -4,14 +4,16 @@ function drinkFlavor(flavour: string) {
     }
 }
 
-test('throws on octopus', () => {
+test('throws on octopus', (done) => {
     expect(() => {
         drinkFlavor('octopus');
     }).toThrow();
+    done()
 });
 
-test('throws on octopus', () => {
+test('throws on octopus', (done) => {
     expect(() => {
         drinkFlavor('octopus');
     }).toThrow('I hate octopus');
+    done()
 });
