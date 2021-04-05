@@ -41,6 +41,19 @@
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "docs/CHANGELOG.md"
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": ["docs/CHANGELOG.md"]
+        }
+      ],
       [
         "@semantic-release/npm",
         {
@@ -58,7 +71,7 @@
           "package-lock.json",
           "CHANGELOG.md"
         ],
-        "message": "chore(release): ${nextRelease.version} [skip ci]nn${nextRelease.notes}"
+        "message": "chore(release): ${nextRelease.version}"
       }
     ],
     "parserOpts": {
