@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/enriquezrene/jest-journey/compare/v1.3.1...v1.3.2) (2021-04-05)
+
+
+### Bug Fixes
+
+* remove undesired config verbose ([6a87b46](https://github.com/enriquezrene/jest-journey/commit/6a87b4603e790201d48cfcb28e11fe8030b3c47c))
+
 ## [1.3.1](https://github.com/enriquezrene/jest-journey/compare/v1.3.0...v1.3.1) (2021-04-05)
 
 
