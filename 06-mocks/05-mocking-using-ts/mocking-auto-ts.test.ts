@@ -10,9 +10,10 @@ mockAdd.mockImplementation((a, b) => {
     return 6
 })
 
-test('calculate calls add', () => {
+test('calculate calls add', (done) => {
     calculate('Add', 1, 2);
 
     expect(mockAdd).toBeCalledTimes(1);
     expect(mockAdd).toBeCalledWith(1, 2);
+    done()
 });
