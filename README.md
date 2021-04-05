@@ -1,3 +1,3 @@
 # jest-journey
 
-https://jestjs.io/docs/mock-function-api#jestmockedclass
+https://jestjs.io/docs/jest-object
