@@ -1,6 +1,6 @@
 {
   "name": "jest-journey",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "jest training",
   "main": "index.js",
   "scripts": {
