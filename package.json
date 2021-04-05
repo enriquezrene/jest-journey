@@ -41,25 +41,22 @@
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
       [
-        "@semantic-release/npm",
+        "@semantic-release/changelog",
         {
-          "npmPublish": false
+          "changelogFile": "docs/CHANGELOG.md"
         }
-      ]
-    ],
-    "prepare": [
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": ["docs/CHANGELOG.md"]
+        }
+      ],
       "@semantic-release/changelog",
       "@semantic-release/npm",
-      {
-        "path": "@semantic-release/git",
-        "assets": [
-          "package.json",
-          "package-lock.json",
-          "CHANGELOG.md"
-        ],
-        "message": "chore(release): ${nextRelease.version}"
-      }
+      "@semantic-release/git"
     ],
     "repositoryUrl": "https://github.com/enriquezrene/jest-journey"
   }
