@@ -1,6 +1,6 @@
 {
   "name": "jest-journey",
-  "version": "1.1.0",
+  "version": "1.0.1",
   "description": "jest training",
   "main": "index.js",
   "scripts": {
@@ -41,22 +41,6 @@
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      [
-        "@semantic-release/changelog",
-        {
-          "changelogFile": "docs/CHANGELOG.md"
-        }
-      ],
-      [
-        "@semantic-release/git",
-        {
-          "assets": ["docs/CHANGELOG.md"]
-        }
-      ],
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git",
       [
         "@semantic-release/npm",
         {
@@ -64,6 +48,22 @@
         }
       ]
     ],
+    "prepare": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      {
+        "path": "@semantic-release/git",
+        "assets": [
+          "package.json",
+          "package-lock.json",
+          "CHANGELOG.md"
+        ],
+        "message": "chore(release): ${nextRelease.version} [skip ci]nn${nextRelease.notes}"
+      }
+    ],
+    "parserOpts": {
+      "mergePattern": "Merged PR .*:"
+    },
     "repositoryUrl": "https://github.com/enriquezrene/jest-journey"
   }
 }
