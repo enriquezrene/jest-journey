@@ -11,5 +11,5 @@ jobs:
       - node/with-cache:
           steps:
             - run: npm install
-      - run: npm run test --detectOpenHandles
+      - run: npm run test
       - run: npx semantic-release
