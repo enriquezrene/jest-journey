@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/enriquezrene/jest-journey/compare/v1.3.2...v1.3.3) (2021-04-05)
+
+
+### Bug Fixes
+
+* remove prepare ([6cf08e2](https://github.com/enriquezrene/jest-journey/commit/6cf08e23be4b0e83844c6176681d268082a0ca6c))
+
 ## [1.3.2](https://github.com/enriquezrene/jest-journey/compare/v1.3.1...v1.3.2) (2021-04-05)
 
 
