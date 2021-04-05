@@ -41,9 +41,6 @@
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
-      {
-        "preset": "angular"
-      },
       [
         "@semantic-release/npm",
         {
@@ -61,12 +58,9 @@
           "package-lock.json",
           "CHANGELOG.md"
         ],
-        "message": "chore(release): ${nextRelease.version} [skip ci]nn${nextRelease.notes}"
+        "message": "chore(release): ${nextRelease.version}"
       }
     ],
-    "parserOpts": {
-      "mergePattern": "Merged PR .*:"
-    },
     "repositoryUrl": "https://github.com/enriquezrene/jest-journey"
   }
 }
